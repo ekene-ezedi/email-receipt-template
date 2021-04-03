@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: rgba(128, 128, 128, 0.212);
+            display: flex;
+            justify-content: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+        #container{
+            width:500px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        #container-header{
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid#00E676;
+            background-color: white;
+        }
+
+        #logo{
+            font-size: 2rem;
+        }
+
+        #details{
+            padding: 0.5rem;
+            background-color: white;
+        }
+        #details header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+            border-bottom: 1px solid #EEEEEE;
+        }
+
+        #receipt-id{
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        #cost{
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        #info{
+            padding: 0.5rem;
+        }
+
+        .item{
+            display: flex;
+            justify-content: space-between;
+            color:#9E9E9E;
+        }
+
+        .item p {
+            margin:3px;
+        }
+
+        #seperator-wrapper{
+            display: flex; 
+            justify-content: flex-end;
+        }
+
+        #seperator{
+            border-top: 1px solid #EEEEEE;
+            margin-top: 10px; 
+            width:80px;
+        }
+
+        #total-wrapper{
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border-bottom: 1px solid #EEEEEE;
+            margin-bottom: 10px;
+        }
+
+        #destination{
+            margin-top: 20px;
+            display: flex;
+            background-color: white;
+            padding: 10px 10px 0px 10px;
+        }
+
+        #location{
+            display: flex;
+            background-color: white;
+            margin-top: 1px;
+            padding: 0px 10px 10px 10px;
+        }
+
+        #icon-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 10px 0px 10px;
+        }
+
+        #location #icon-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 10px 10px 10px;
+        }
+
+        #location #icon{
+            width: 15px;
+            height: 15px;
+            background-color: #FF1744;
+            border-radius: 100%;
+        }
+
+        #icon {
+            width: 15px;
+            height: 15px;
+            background-color: #00E676;
+            border-radius: 100%;
+        }
+
+        #location #vertical-stroke{
+            width: 2px;
+            height: 15px;
+            background-color: #FF1744;
+        }
+
+        #vertical-stroke{
+            width: 2px;
+            height: 15px;
+            background-color: #00E676;
+        }
+
+        #address {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 2;
+            padding: 10px;
+        }
+
+        #address p {
+            margin: 0;
+        }
+
+        #driver{
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px;
+        }
+
+        #driver #img{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color:#00E676;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <header id="container-header">
+            <h1 id="logo">Logo</h1>
+            <h4 id="date">Date</h4>
+        </header>
+
+        <div id="details">
+            <header>
+                <p id="receipt-id">.... reciept Id</p>
+                <p id="cost">&#8358 Cost</p>
+            </header>
+
+            <div id="info">
+                <div class="item">
+                    <p>Item 1</p>
+                    <p>&#8358 cost</p>
+                </div>
+
+                <div class="item">
+                    <p>Item 1</p>
+                    <p>&#8358 cost</p>
+                </div>
+
+                <div class="item">
+                    <p>Item 1</p>
+                    <p>&#8358 cost</p>
+                </div>
+
+                <div class="item">
+                    <p>Item 1</p>
+                    <p>&#8358 cost</p>
+                </div>
+
+                <div id="seperator-wrapper">
+                    <div id="seperator"></div>
+                </div>
+
+                <div id="total-wrapper">
+                    <p style="font-weight: 700;">Total</p>
+                    <p style="font-weight: 700;">&#8358 cost</p>     
+                </div>
+
+                <div class="item">
+                    <p>Ride distance</p>
+                    <p>4km</p>
+                </div>
+
+                <div class="item">
+                    <p>Ride duration</p>
+                    <p>00:07</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="route">
+            <div id="destination">
+                <div id="icon-wrapper">
+                    <div id="icon"></div>
+                    <div id="vertical-stroke"></div>
+                </div>
+                <div id="address">
+                    <p>Chief Bamidele Eletu Avenue 1</p>
+                    <p style="color: grey;">07:53</p>
+                </div>
+            </div>
+            <div id="location">
+                <div id="icon-wrapper">
+                    <div id="vertical-stroke"></div>
+                    <div id="icon"></div>
+                </div>
+                <div id="address">
+                    <p>Resurrection Drive 1</p>
+                    <p style="color: grey;">08:01</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="google-maps" style="width: 100%;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d253682.63269075818!2d3.1438686!3d6.5480357!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bee62d44ab573%3A0x44ddf6ea18edfcb3!2sIkorodu!5e0!3m2!1sen!2sng!4v1617480118170!5m2!1sen!2sng" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div id="driver">
+            <div id="img">
+            </div>
+            <p>Batman was your driver</p>
+        </div>
+    </section>
+</body>
+</html>
